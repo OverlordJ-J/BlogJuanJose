@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Inicio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    footer {
+      background-color: #C0C0C0;
+      padding: 25px;
+    }
+    .gray{
+       background-color: #C0C0C0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Vertedero</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Inicio</a></li>
+        <li><a href="/intereses">Textos Inconclusos</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Sitio de {{ nombre }}</h1>
+    <p>Cuando creías que no se podia caer más abajo.</p>
+  </div>
+</div>
+<div class="container-fluid bg-3 text-left">    
+  <h3>Los temas que más me atraen:</h3><br>
+  <div class="row">
+    <div class="col-sm-1 text-left">
+      <a href="https://innovacionyciencia.com/"><p>Innovación</p></a>
+        <img src="{{url_for('static', filename='image3.png')}}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-2"> 
+      <a href="https://developer.sabre.com/blog/5-technologies-programmer-should-learn-2020"><p>Programación</p>
+        <img src="{{url_for('static', filename='image4.png')}}" class="img-responsive" style="width:100%" alt="Image"></a> 
+    </div>
+    <div class="col-sm-2"> 
+      <a href="https://steamcommunity.com/profiles/76561198804102041/"><p>Videojuegos</p></a>
+      <img src="{{url_for('static', filename='image2.png')}}" class="img-responsive" style="width:80%" alt="Image">
+    </div>
+    <div class="col-sm-2"> 
+      <a href="https://www.cocinacaserayfacil.net/papas-patatas-fritas-crujientes-a-la-francesa/"><p>Las papas fritas</p>
+        <img src="{{url_for('static', filename='image5.png')}}" class="img-responsive" style="width:100%" alt="Image"></a> 
+    </div>
+    <div class="col-sm-3"> 
+      <a href="https://www.animefenix.com/"><p>El materia audio visual geek</p></a>
+      <img src="{{url_for('static', filename='image6.png')}}" class="img-responsive" style="width:60%" alt="Image">
+    </div>
+  </div>
+</div><br>
+<div class="gray">
+<div class="container-fluid bg-3 text-left">    
+  <h3>Las cosas que más odio:</h3><br>
+  <div class="row">
+    <div class="col-sm-1 text-right">
+      <a href="https://www.facebook.com/uriel.morales.5621"><p>Malas personas</p></a>   
+      <img src="{{url_for('static', filename='image1.png')}}" class="img-responsive text-right" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-1 text-right"> 
+      <a href="https://www.facebook.com/hectorjavier.diazcaudillo"><p>Hipocresía</p></a> <img src="{{url_for('static', filename='image11.png')}}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-1 text-right"> 
+      <a href="https://www.facebook.com/juan.j.ramosgarcia/"><p>Mentiras</p></a><img src="{{url_for('static', filename='image111.png')}}" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+
+</div><br>
+</div><br><br>
+</div>
+<footer class="container-fluid text-right">
+</footer>
+
+</body>
+</html
